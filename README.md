@@ -1,6 +1,6 @@
-# stellar-xdr-debugger
+# stellar-xdr-viewer
 
-A tool to debug Stellar XDR.
+A tool to view Stellar XDR.
 
 ## Developing
 
