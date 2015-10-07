@@ -3,8 +3,6 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
-gulp.task('clean', require('del').bind(null, ['dist']));
-
 gulp.task('serve', function () {
   browserSync({
     notify: false,

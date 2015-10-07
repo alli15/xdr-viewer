@@ -1,6 +1,6 @@
 {
-  "name": "stellar-xdr-debugger",
-  "description": "Stellar XDR debugger",
+  "name": "xdr-viewer",
+  "description": "Stellar XDR viewer",
   "dependencies": {
     "bootstrap-treeview": "1.2.0",
     "lodash": "3.10.1",
