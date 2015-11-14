@@ -34,13 +34,19 @@
 
   <div class="form-group">
     <label for="type">Select type:</label>
-    <select id="type" onchange="newXDR()" class="form-control"></select>
+    <select id="type" class="form-control"></select>
   </div>
 
   <div class="form-group">
     <label for="xdr">Copy and paste base64-encoded XDR blob or <a href="#" onclick="getLatestTransaction(event)">view the latest transaction in Stellar Test Network</a></label>
-    <textarea id="xdr" onkeyup="newXDR()" class="form-control" rows="4"></textarea>
+    <textarea id="xdr" class="form-control" rows="4"></textarea>
   </div>
+
+  <div class="form-group pull-right">
+    <button type="button" class="btn btn-primary" onclick="newXDR()">Decode</button>
+  </div>
+
+  <div class="clearfix"></div>
 
   <div id="alert" class="alert alert-danger hidden" role="alert">
     <strong>Oh, snap!</strong> <span id="alert-text"></span>
