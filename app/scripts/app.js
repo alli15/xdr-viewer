@@ -2,6 +2,7 @@
 
 var types = [
   'TransactionEnvelope',
+  'TransactionMeta',
   'TransactionResult',
   '---',
   'AccountEntry',
@@ -112,7 +113,6 @@ var types = [
   'TransactionHistoryEntryExt',
   'TransactionHistoryResultEntry',
   'TransactionHistoryResultEntryExt',
-  'TransactionMeta',
   'TransactionResultCode',
   'TransactionResultExt',
   'TransactionResultPair',
