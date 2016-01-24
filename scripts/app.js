@@ -131,6 +131,8 @@ $(document).ready(function() {
       .append($("<option></option>").text(value));
   });
 
+  $('#xdr').bind('change keypress copy paste', showChanged);
+
   if (document.location.hash) {
     var hashData = document.location.hash.substr(1).split('&');
     var data = _(hashData).map(function (element) {
@@ -165,6 +167,7 @@ function getLatestTransaction(event) {
 
 function newXDR() {
   hideAlert();
+  hideChanged();
 
   var type = $('#type').val();
   if (type == '---') {
@@ -174,6 +177,7 @@ function newXDR() {
 
   var xdr = $('#xdr').val();
   if (!xdr) {
+    $('#tree').empty();
     return;
   }
 
@@ -293,4 +297,12 @@ function showAlert(text) {
   $('#alert-text').text(text);
   // and remove hash
   document.location.hash = '';
+}
+
+function hideChanged() {
+  $('#warning-changed').addClass('hidden');
+}
+
+function showChanged() {
+  $('#warning-changed').removeClass('hidden');
 }
