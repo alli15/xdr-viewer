@@ -10,14 +10,14 @@
     "stellar"
   ],
   "license": "Apache 2.0",
-  "version": "0.3.5",
-  "_release": "0.3.5",
+  "version": "0.4.2",
+  "_release": "0.4.2",
   "_resolution": {
     "type": "version",
-    "tag": "v0.3.5",
-    "commit": "1f9bce4ca922eb3693caacc4dac2f564b78ea6e0"
+    "tag": "v0.4.2",
+    "commit": "401ef983992d5c697d8b708ed45db936d6e0be0d"
   },
   "_source": "git://github.com/stellar/bower-js-stellar-sdk.git",
-  "_target": "~0.3.5",
+  "_target": "~0.4.2",
   "_originalSource": "stellar-sdk"
 }
